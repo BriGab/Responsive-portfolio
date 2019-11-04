@@ -1,0 +1,155 @@
+body {
+    background-image: url("what-the-hex.png");
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0px;
+    max-width: 100%;
+    margin-right: 0px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.mynavbar {
+    width: 80%;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 0px;
+}
+li{
+    display: inline;
+}
+
+#name, h1 {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+#contact {
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    margin-right: 0px;
+}
+.link {
+    font-size: 18px;
+    color: #666666;
+    margin-top: 30px;
+    text-align: right;
+}
+a:hover {
+    color: black;
+}
+.wrapper {
+    width: 80%;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+    height: 100%;
+}
+.content {
+    height: 100%;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-bottom: 2px solid #cccccc;
+
+}
+#myphoto {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+p {
+    padding-top: 15px;
+    margin-top: 0px; 
+    line-height: 150%;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.footer {
+    background: #666666;
+    color: #ffffff;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+/* contact page */
+form {
+    padding: 10px;
+}
+#message {
+    height: 200px;
+}
+/* Portfolio page */
+.box, img {
+    margin-top:15px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 20px;
+    bottom: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding:15px;
+    color: #ffffff;
+    background: #4aaaa5;
+    border-bottom: 0px;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.e {
+   margin-bottom: 20px; 
+}
+
+@media only screen and (max-width: 640px) {    
+.namenav {
+    width: 100%;
+    text-align: center;
+} 
+.mynavbar {
+    width: 100%;
+}
+.small {
+    text-align: center;
+}
+.box {
+    align-content: center;
+}
+
+}
