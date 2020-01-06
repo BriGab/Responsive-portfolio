@@ -1,7 +1,14 @@
+html {
+    height: 100%;
+}
 body {
     background-image: url("what-the-hex.png");
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
 
 .header {
     margin: 0 auto;
@@ -19,9 +26,7 @@ body {
     margin-top: 0px;
     padding: 0px;
 }
-li{
-    display: inline;
-}
+
 
 #name, h1 {
     background: #4aaaa5;
@@ -46,7 +51,7 @@ li{
     font-size: 18px;
     color: #666666;
     margin-top: 30px;
-    text-align: right;
+    
 }
 a:hover {
     color: black;
@@ -57,10 +62,7 @@ a:hover {
     margin: 0 auto;
     margin-top: 30px;
     border: 1px solid #cccccc;
-    height: 100%;
-}
-.content {
-    height: 100%;
+    flex: 1 0 auto;
 }
 
 h2 {
@@ -96,9 +98,8 @@ p {
     border-top: 8px solid #4aaaa5;
     height: 50px;
     text-align: center;
-    padding-top: 15px;
     width: 100%;
-    margin-top: 10px;
+    flex: 0 0 auto;
 }
 /* contact page */
 form {
@@ -108,18 +109,24 @@ form {
     height: 200px;
 }
 /* Portfolio page */
-.box, img {
+.box {
     margin-top:15px;
-    width: auto;
-    max-width: 100%;
-    height: auto;
+    width: 275px;
     position: relative;
+    display: flex;
+    Flex-wrap: wrap;
   }
+img {
+    width: 100%;
+}
 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
+    max-width: 100%;
     font-size: 20px;
     bottom: 10px;
+    right: 0px;
+    left: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     padding:15px;
@@ -128,9 +135,7 @@ h3{
     border-bottom: 0px;
     text-align: center;
     font-weight: normal;
-    width: 100%;
     overflow: hidden;
-
 }
 
 .e {
@@ -152,4 +157,9 @@ h3{
     align-content: center;
 }
 
+}
+@media only screen and (max-width: 380px) {
+    .box {
+        width: 200px;
+    }
 }
